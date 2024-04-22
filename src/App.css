@@ -1,0 +1,156 @@
+.header {
+  background-color: #fff;
+  height: 56px;
+  padding: 8px 0;
+}
+
+.search {
+  width: 480px;
+  position: relative;
+  margin: auto;
+}
+
+.search-input {
+  height: 40px;
+  width: 480px;
+  border-radius: 5px;
+  border: 1px solid rgb(212, 212, 212);
+  padding: 0 8px;
+}
+
+.btn-search {
+  position: absolute;
+  background-color: #fff;
+  border: none;
+  top: 7px;
+  right: 2px;
+}
+
+.container {
+  max-width: 1024px;
+  margin: auto;
+  padding: 20px;
+}
+
+.list-article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.article {
+  width: 736px;
+  min-height: 194px;
+  background-color: #fff;
+  margin: auto;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.author {
+  display: flex;
+  gap: 20px;
+}
+
+.author-avatar {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.author-name {
+  font-size: 14px;
+  color: #3d3d3d;
+}
+
+.author-published {
+  font-size: 12px;
+  color: #525252;
+}
+
+.article-body {
+  margin-left: 60px;
+}
+
+.article-title {
+  font-weight: 700;
+  color: #171717;
+  font-size: 24px;
+  line-height: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.article-tags {
+  display: flex;
+  gap: 5px;
+}
+
+.tag {
+  color: #404040;
+  font-size: 14px;
+  line-height: 21px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 7px;
+}
+
+.tag:hover {
+  background-color: rgb(229, 229, 229);
+  border-radius: 5px;
+}
+
+.article-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 60px;
+}
+
+.article-social {
+  display: flex;
+  gap: 5px;
+}
+
+.social {
+  color: #404040;
+  font-size: 14px;
+  line-height: 21px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 7px;
+}
+
+.social:hover {
+  background-color: rgb(229, 229, 229);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.social .article-icon {
+  font-size: 16px;
+}
+
+.article-bookmark:hover {
+  background-color: rgb(229, 229, 229);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.article-bookmark .material-symbols-outlined {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+}
