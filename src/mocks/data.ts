@@ -1,4 +1,6 @@
-const sampleData = [
+import { IPostDetail } from "../types/post";
+
+export const samplePosts: IPostDetail[] = [
   {
     id: 1818120,
     avatar:
@@ -334,5 +336,3 @@ const sampleData = [
     comments: 27,
   },
 ];
-
-export default sampleData
