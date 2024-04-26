@@ -6,14 +6,14 @@ export function Article(props: any) {
       <div className="article-header">
         <div className="author">
           <img
-            src={article.avatar}
+            src={article.user.profile_image}
             alt="Author avatar"
             className="author-avatar"
           />
           <div className="author-info">
-            <p className="author-name">{article.username}</p>
+            <p className="author-name">{article.user.name}</p>
             <p className="author-published">
-                {(new Date(article.publishedAt)).toLocaleDateString(
+                {(new Date(article.published_at)).toLocaleDateString(
                     'en-US', { month: 'short', day: '2-digit', year: '2-digit' }
                 )}
             </p>
@@ -23,7 +23,7 @@ export function Article(props: any) {
       <div className="article-body">
         <p className="article-title">{article.title}</p>
         <ul className="article-tags">
-          {article.tags.map((tag: string, index_tag:  number) => 
+          {article.tag_list.map((tag: string, index_tag:  number) =>
             <li className="article-tag" key={index_tag}>
               <a href="#" className="tag"> #{tag}</a>
             </li>
@@ -34,11 +34,11 @@ export function Article(props: any) {
         <div className="article-social">
           <span className="social">
             <span className="article-icon material-symbols-outlined">add_reaction</span>
-            <span>{article.reactions} reactions</span>
+            <span>{article.public_reactions_count} reactions</span>
           </span>
           <span className="social">
             <span className="article-icon material-symbols-outlined">chat_bubble</span>
-            <span>{article.comments} comments</span>
+            <span>{article.comments_count} comments</span>
           </span>
         </div>
         <div className="article-bookmark">
